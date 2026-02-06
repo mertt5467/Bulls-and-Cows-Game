@@ -59,6 +59,8 @@ Bu bir Java kaynak kodudur. Çalıştırmadan önce bilgisayarınızda Java JDK 
 Correct digit in the correct position. / Doğru rakam, doğru yerde.
 
 **Cow (İnek):**
+
 Correct digit but in the wrong position. / Rakam doğru ama yeri yanlış.
+
 
 Developed for learning and practice purposes. / Öğrenme ve pratik amaçlı geliştirilmiştir.
