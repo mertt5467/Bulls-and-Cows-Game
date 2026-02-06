@@ -22,7 +22,6 @@ public class App {
         System.out.println("1 - Easy");
         System.out.println("2 - Normal");
         System.out.println("3 - Hard");
-        System.out.print("Choose: ");
         while (true) {
             int choose = inputI();
             if (choose == 1) {
@@ -53,30 +52,30 @@ public class App {
         game(deck);
     }
 
-    static void game(ArrayList<Integer> numbers){
+    static void game(ArrayList<Integer> numbers) {
         int tour = 1;
         int trueNumbers = 0;
         int truePlacement = 0;
-        while(true){
+        while (true) {
             System.out.println("Tour " + tour);
             System.out.print("Attempt: ");
             ArrayList<Integer> playerInput = playerInput();
 
-            for(int i = 0; i < numbers.size(); i++){
-                if(numbers.get(i) != playerInput.get(i)){
+            for (int i = 0; i < numbers.size(); i++) {
+                if (numbers.get(i) != playerInput.get(i)) {
                     continue;
                 }
                 truePlacement++;
             }
-            if(truePlacement == diff){
+            if (truePlacement == diff) {
                 System.out.println("Congratulations! You are Win!");
                 return;
             }
             ArrayList<Integer> copyNumbers = new ArrayList<>(numbers);
 
-            for(int i = 0; i < playerInput.size(); i++){
-                for(int j = 0; j < copyNumbers.size(); j++){
-                    if(playerInput.get(i) == copyNumbers.get(j)){
+            for (int i = 0; i < playerInput.size(); i++) {
+                for (int j = 0; j < copyNumbers.size(); j++) {
+                    if (playerInput.get(i) == copyNumbers.get(j)) {
                         trueNumbers++;
                         copyNumbers.remove(j);
                         break;
@@ -96,9 +95,17 @@ public class App {
 
     static int inputI() {
         while (true) {
-            int x = i.nextInt();
-            i.nextLine();
-            return x;
+            try {
+                System.out.print("Choose: ");
+                int x = i.nextInt();
+                i.nextLine();
+                return x;
+            } catch (Exception e) {
+                System.out.println("Input Mismatch Error: Please try again.");
+                i.nextLine();
+                delay(1);
+                continue;
+            }
         }
     }
 
@@ -111,18 +118,20 @@ public class App {
                 combine = x.replace(" ", "");
                 int result = Integer.parseInt(combine);
                 ArrayList<Integer> playerNumbers = new ArrayList<>();
-                while(result > 0){
+                while (result > 0) {
                     int temp = result % 10;
                     playerNumbers.add(temp);
                     result /= 10;
                 }
-                if(diff != playerNumbers.size()){
+                if (diff != playerNumbers.size()) {
                     throw new Exception("The number entered must be " + diff);
                 }
                 Collections.reverse(playerNumbers);
                 return playerNumbers;
             } catch (Exception e) {
                 System.out.println("Input Mismatch Error: Please try again.");
+                delay(1);
+                System.out.print("Attempt: ");
                 continue;
             }
         }
