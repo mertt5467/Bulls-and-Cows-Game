@@ -1,4 +1,4 @@
-# Bulls and Cows Game
+# Bulls and Cows Game (ENG)
 
 A terminal-based Mastermind (Bulls and Cows) game written in Java. Challenge your logic by cracking the hidden numerical code.
 
@@ -10,7 +10,7 @@ This is a Java source code. You need to have Java JDK installed on your computer
 
 1. **Clone the project:**
    ```bash
-   git clone [https://github.com/mertt5467/Bulls-and-Cows-Game.git](https://github.com/mertt5467/Bulls-and-Cows-Game.git)
+   git clone git clone https://github.com/mertt5467/Bulls-and-Cows-Game.git
    cd Bulls-and-Cows-Game
    ```
 
@@ -26,7 +26,7 @@ This is a Java source code. You need to have Java JDK installed on your computer
 
 ---
 
-# Bulls and Cows Oyunu
+# Bulls and Cows Oyunu (TR)
 
 Java dili ile yazılmış, terminal üzerinde çalışan bir Mastermind (Bulls and Cows) oyunudur. Mantığınızı kullanarak gizli sayı dizisini çözmeye çalışın.
 
@@ -38,7 +38,7 @@ Bu bir Java kaynak kodudur. Çalıştırmadan önce bilgisayarınızda Java JDK 
 
 1.  **Projeyi bilgisayarınıza çekin:**
     ```bash
-    git clone [https://github.com/mertt5467/Bulls-and-Cows-Game.git](https://github.com/mertt5467/Bulls-and-Cows-Game.git)
+    git clone https://github.com/mertt5467/Bulls-and-Cows-Game.git
     cd Bulls-and-Cows-Game
     ```
 
@@ -61,6 +61,3 @@ Correct digit in the correct position. / Doğru rakam, doğru yerde.
 **Cow (İnek):**
 
 Correct digit but in the wrong position. / Rakam doğru ama yeri yanlış.
-
-
-Developed for learning and practice purposes. / Öğrenme ve pratik amaçlı geliştirilmiştir.
