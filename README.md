@@ -10,7 +10,7 @@ This is a Java source code. You need to have Java JDK installed on your computer
 
 1. **Clone the project:**
    ```bash
-   git clone git clone https://github.com/mertt5467/Bulls-and-Cows-Game.git
+   git clone https://github.com/mertt5467/Bulls-and-Cows-Game.git
    cd Bulls-and-Cows-Game
    ```
 
